@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="justice chimobi">
+    <meta name="description" content="A Testing rich custom editor">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/css/tooltip.css">
+    <title>Testing Custom Rich-Editor</title>
+</head>
+<body>
+    <div class="box-container">
+        <form action="" method="POST" class="rich-editor-container">
+            <div class="container">
+                <div class="holder" id="input">
+                    <input type="text" name="title" id="input-title" placeholder="Title...">
+                </div>
+                <div class="holder" id="textarea">
+                    <textarea name="body" id="input-body" cols="10" rows="3" placeholder="Body..."></textarea>
+                </div>
+            </div>
+
+            <div class="rich-toolbar" id="rich-toolbar">
+                <section>
+                    <div id="bold-button" class="tooltip">B <span class="tooltiptext">Bold</span></div>
+                    <div id="italic-button" class="tooltip">I <span class="tooltiptext">Italic</span></div>
+                    <div id="change-text-font" class="tooltip">T <span class="tooltiptext">Text size</span></div>
+
+                    <ul id="font-lists">
+                        <li><button type="button" id="smallText">Small</button></li>
+                        <li><button type="button" id="normalText">Normal</button></li>
+                        <li><button type="button" id="largeText">Large</button></li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="rich-toolbar-panel">
+                <section>
+                    <div id="formatting-toggle-button" class="tooltip">A <span class="tooltiptext">Formatting</span></div>
+                    <div id="upload-button">
+                        <label for="upload" class="tooltip">IMG <span class="tooltiptext">Add photo</span></label>
+                        <input type="file" name="upload" id="upload">
+                    </div>
+                </section>
+
+                <div class="button-send-holder">
+                    <button type="submit" id="send-button" disabled="disabled" title="All fields are required">Post</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
